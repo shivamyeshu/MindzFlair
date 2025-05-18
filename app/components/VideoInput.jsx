@@ -70,7 +70,7 @@ export default function VideoInput() {
             onChange={(e) => setUrl(e.target.value)}
             className="w-full md:w-4/5 p-3 text-lg rounded-xl shadow-md border border-purple-300 dark:border-white
                        focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-400
-                       transition-all duration-200 bg-white/90 dark:bg-gray-900 dark:text-white
+                       transition-all duration-200 bg-white/90 dark:bg-gray-800/90 dark:text-white
                        placeholder:text-gray-500 dark:placeholder:text-gray-400"
           />
           <button
@@ -78,8 +78,8 @@ export default function VideoInput() {
             disabled={loading}
             className={`px-4 py-2 text-lg font-semibold rounded-xl shadow-md curor-pointertransition-all duration-200 ${
               loading
-                ? 'bg-black dark:bg-black cursor-not-allowed'
-                : 'bg-gradient-to-tr from-gray-500 via-white to-slate-800 hover:from-pink-500 hover:to-purple-900 text-slate-800 cursor-pointer'
+                ? 'bg-black cursor-not-allowed '
+                : 'bg-gradient-to-br text- from-gray-500 via-slate-400 to-slate-800  hover:from-violet-500 hover:to-blue-400 cursor-pointer'
             }`}
           >
             {loading ? '⏳' : 'Fetch Transcript'}

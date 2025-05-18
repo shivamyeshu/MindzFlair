@@ -11,6 +11,7 @@ export async function POST(req) {
     // Fetch transcript from YouTube
     const items = await YoutubeTranscript.fetchTranscript(videoId)
     const fullText = items.map(i => i.text).join(' ')
+    // console.log("summary ", fullText )
     console.log('Transcript length:', fullText.length)
 
     return NextResponse.json({ transcript: fullText })

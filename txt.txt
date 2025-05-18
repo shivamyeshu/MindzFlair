@@ -1,6 +1,6 @@
+To do : 
+
 summarization logic with ui 
-
-
 
 authantiucation 
 payment wall 
@@ -9,7 +9,5 @@ payment +auth  db m store
 
 summarization + video id +_ user id + username + email = stire in db 
 6 hrs crediential 
-
-
 
 main screen 

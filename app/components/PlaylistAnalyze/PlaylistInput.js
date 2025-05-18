@@ -40,10 +40,10 @@ export default function PlaylistInput({ setData, loading, setLoading }) {
         className={`px-4 py-2 text-lg font-semibold rounded-xl shadow-md transition-all duration-200 ${
           loading
             ? 'bg-black dark:bg-black cursor-not-allowed'
-            : 'bg-gradient-to-tr from-gray-500 via-white to-slate-800 hover:from-pink-500 hover:to-purple-900 text-slate-800 cursor-pointer ' 
+            : 'bg-gradient-to-br text- from-gray-500 via-slate-400 to-slate-800  hover:from-violet-500 hover:to-blue-400 cursor-pointer' 
         }`}
       >
-        {loading ? '⏳' : ' Calculate Duration'}
+        {loading ? '💫' : ' Calculate Duration'}
       </button>
     </form>
   );
