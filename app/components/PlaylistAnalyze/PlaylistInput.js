@@ -37,7 +37,7 @@ export default function PlaylistInput({ setData, loading, setLoading }) {
       <button
         type="submit"
         disabled={loading}
-        className={`px-6 py-2 text-lg font-semibold rounded-xl shadow-md transition-all duration-200 ${
+        className={`px-4 py-2 text-lg font-semibold rounded-xl shadow-md transition-all duration-200 ${
           loading
             ? 'bg-black dark:bg-black cursor-not-allowed'
             : 'bg-gradient-to-tr from-gray-500 via-white to-slate-800 hover:from-pink-500 hover:to-purple-900 text-slate-800 cursor-pointer ' 

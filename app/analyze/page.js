@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import PlaylistInput from '../components/Playlist/PlaylistInput';
-import PlaylistStats from '../components/Playlist/PlaylistStats';
+import PlaylistInput from '../components/PlaylistAnalyze/PlaylistInput';
+import PlaylistStats from '../components/PlaylistAnalyze/PlaylistStats';
 
 export default function AnalyzePage() {
   const [data, setData] = useState(null);
@@ -16,12 +16,12 @@ export default function AnalyzePage() {
                       backdrop-blur-lg rounded-2xl shadow-2xl p-8 text-center border border-white/30 
                       dark:border-gray-700 transition-colors duration-500">
        <h1
-        className="text-4xl md:text-5xl font-extrabold mb-4 animate-bounce-slow transition-colors duration-500 
-                    bg-gradient-to-br from-black via-blue-500 to-slate-500 dark:from-slate-500 dark:via-slate-300 dark:to-blue-700 
+        className="text-2xl md:text-3xl font-extrabold mb-4 animate-bounce-slow transition-colors duration-500 
+                    bg-gradient-to-br from-black via-blue-500 to-slate-500 dark:from-black dark:via-slate-300 dark:to-blue-700 
                     text-transparent bg-clip-text">
                      🎥 Playlist Analyzer 
         </h1>
-        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 animate-fade-in transition-colors duration-500">
+        <p className="text-sm md:text-sm text-gray-700 dark:text-gray-300 mb-6 animate-fade-in transition-colors duration-500">
           Paste a YouTube playlist and let us calculate time — total duration, average time, and speed-watch info.
         </p>
 

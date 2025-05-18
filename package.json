@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ai4bharat/indic-transliterate": "^1.3.8",
     "@google/generative-ai": "^0.24.1",
+    "@indic-transliteration/sanscript": "^1.3.1",
     "gemini-ai": "^2.2.1",
     "mindsflare": "file:",
     "next": "15.3.2",
@@ -17,6 +19,7 @@
     "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "transliteration": "^2.3.5",
     "youtube-transcript": "^1.2.1"
   },
   "devDependencies": {
