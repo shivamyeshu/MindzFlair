@@ -65,7 +65,7 @@ export function NavbarFuck() {
                 variant="primary"
                 className="w-full"
               >
-                Reviews
+                Top Searched  
               </NavbarButton>
             </div>
           </NavBody>

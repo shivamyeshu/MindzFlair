@@ -41,7 +41,7 @@ export default function AnalyzePage() {
         )}
 
         <p className="mt-10 text-xs text-gray-600 dark:text-gray-400 transition-colors duration-500">
-          Built for students ! 💜
+          MindzFlare — Made for students who want more, in less time.
         </p>
       </div>
     </main>

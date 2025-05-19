@@ -40,11 +40,14 @@ export default function SummaryInput() {
                       backdrop-blur-lg rounded-2xl shadow-2xl p-8 text-center border border-white/30 
                       dark:border-gray-700 transition-colors duration-500">
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4 animate-bounce-slow
-                       bg-gradient-to-br from-black via-blue-500 to-slate-500
+                       bg-gradient-to-br from-black via-blue-500 to-slate-200
                        dark:from-black dark:via-slate-300 dark:to-blue-700
                        text-transparent bg-clip-text">
           Generate summary
         </h1>
+        <h2 className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-2">
+          MindzFlare's AI is cooking you the cleanest summary tool ever. 🍲
+        </h2>
 
         {countdown !== "Available Now!" ? (
           <div className="mb-6 text-xl font-semibold text-center text-gray-700 dark:text-gray-300">
@@ -97,6 +100,7 @@ export default function SummaryInput() {
           Built for students! 💜
         </p>
       </div>
+      
     </main>
   );
 }
