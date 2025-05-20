@@ -94,67 +94,67 @@ function Faq1(){
   return(
  
 <>
-<section class="bg-gradient-to-tr from-black via-slate-900  to-black text-white py-20 px-6">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold mb-2">📹 Playlist Analysis</h3>
-        <p class="text-gray-300">Paste a YouTube playlist link — we’ll instantly fetch all videos with durations, counts, and more.</p>
+<section className="bg-gradient-to-tr from-black via-slate-900  to-black text-white py-20 px-6">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="bg-gray-800 p-6 rounded-xl shadow-md">
+        <h3 className="text-xl font-semibold mb-2"> Playlist Analysis</h3>
+        <p className="text-gray-300">Paste a YouTube playlist link — we’ll instantly fetch all videos with durations, counts, and more.</p>
       </div>
-      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold mb-2">🧠 Transcription </h3>
-        <p class="text-gray-300">Our AI transcribes each video using accurate speech-to-text models. No manual work needed.</p>
+      <div className="bg-gray-800 p-6 rounded-xl shadow-md">
+        <h3 className="text-xl font-semibold mb-2"> Transcription </h3>
+        <p className="text-gray-300">Our AI transcribes each video using accurate speech-to-text models. No manual work needed.</p>
       </div>
-      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold mb-2">🗣️ Summary </h3>
-        <p class="text-gray-300">"We process transcriptions to generate crisp, insightful summaries per video or for the whole playlist.</p>
+      <div className="bg-gray-800 p-6 rounded-xl shadow-md">
+        <h3 className="text-xl font-semibold mb-2"> Summary </h3>
+        <p className="text-gray-300">"We process transcriptions to generate crisp, insightful summaries per video or for the whole playlist.</p>
       </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold mb-2">🎩 Top Summaries (Coming Soon)</h3>
-        <p class="text-gray-300">Get condensed versions of the best takeaways from entire playlists — perfect for fast learners.</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+      <div className="bg-gray-800 p-6 rounded-xl shadow-md">
+        <h3 className="text-xl font-semibold mb-2"> Top Summaries (Coming Soon)</h3>
+        <p className="text-gray-300">Get condensed versions of the best takeaways from entire playlists — perfect for fast learners.</p>
       </div>
-      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
-        <h3 class="text-xl font-semibold mb-2">📚 Playback Speed Insights</h3>
-        <p class="text-gray-300">See how much time you save by watching at 1.5x or 2x speed. Optimize your learning curve!</p>
+      <div className="bg-gray-800 p-6 rounded-xl shadow-md">
+        <h3 className="text-xl font-semibold mb-2"> Playback Speed Insights</h3>
+        <p className="text-gray-300">See how much time you save by watching at 1.5x or 2x speed. Optimize your learning curve!</p>
       </div>
     </div>
   </div>
 </section>
 
 
-<section class="bg-black text-white py-20 px-6">
-  <div class="max-w-5xl mx-auto text-center">
-  <h2 class="text-3xl font-bold mb-12">Why Choose MindzFlair?</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+<section className="bg-black text-white py-20 px-6">
+  <div className="max-w-5xl mx-auto text-center">
+  <h2 className="text-3xl font-bold mb-12">Why Choose MindzFlair?</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 text-left md:grid-cols-3 gap-4">
     
-    <div class="bg-gray-800 p-6 rounded-xl">
-      <h4 class="text-lg font-semibold mb-2">⏱️ Save Time</h4>
-      <p class="text-gray-400">Don’t watch 8-hour videos. MindsFlare gives you summaries of entire playlists in minutes.</p>
+    <div className="bg-gray-800 p-6 rounded-xl">
+      <h4 className="text-lg font-semibold mb-2">Save Time</h4>
+      <p className="text-gray-400">Don’t watch 8-hour videos. MindsFlare gives you summaries of entire playlists in minutes.</p>
     </div>
     
-    <div class="bg-gray-800 p-6 rounded-xl">
-      <h4 class="text-lg font-semibold mb-2">🧠 Study Smarter</h4>
-      <p class="text-gray-400">Get clean, easy-to-read notes with key concepts highlighted — perfect for revision.</p>
+    <div className="bg-gray-800 p-6 rounded-xl">
+      <h4 className="text-lg font-semibold mb-2"> Study Smarter</h4>
+      <p className="text-gray-400">Get clean, easy-to-read notes with key concepts highlighted — perfect for revision.</p>
     </div>
     
-    <div class="bg-gray-800 p-6 rounded-xl">
-      <h4 class="text-lg font-semibold mb-2">🚫 No Distractions</h4>
-      <p class="text-gray-400">No ads, no comments, no YouTube rabbit holes. Just pure focused learning.</p>
+    <div className="bg-gray-800 p-6 rounded-xl">
+      <h4 className="text-lg font-semibold mb-2"> No Distractions</h4>
+      <p className="text-gray-400">No ads, no comments, no YouTube rabbit holes. Just pure focused learning.</p>
     </div>
     
   </div>
 </div>
 
 </section>
-<section class="bg-gradient-to-t from-gray-950 to-black text-white py-20 px-6 text-center"> 
+<section className="bg-gradient-to-t from-gray-950 to-black text-white py-20 px-6 text-center"> 
   <FAQSection/>
 </section>
 
 <section className="bg-gradient-to-b from-gray-950 to-black text-white py-20 pb-44 px-6 text-center">
-  <h2 className="text-3xl font-bold mb-6">Ready to level up your revision?</h2>
+  <h2 className="text-3xl font-bold mb-10">Ready to level up your revision?</h2>
   <a href="/analyze">
     <button className="px-3 py-2 text-lg font-semibold rounded-xl shadow-md transition-all duration-200 bg-gradient-to-br from-gray-900 via-slate-400 to-slate-900 hover:from-blue-600 hover:to-violet-500 cursor-pointer text-white w-60">
       Try MindzFlair

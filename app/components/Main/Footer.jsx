@@ -22,22 +22,6 @@ const Footer = () => {
            MindzFlair breaks down any YouTube playlist—get quick summaries and see how long it'll actually take to watch at your speed. No fluff, just facts.
           </p>
 
-          {/* Social icons */}
-          <div className="flex space-x-4 mb-4">
-            <a href="#" className="hover:text-gray-400">
-              {/* Instagram */}
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7 1.274 4.057-1.178 8.93-4.968 10.93M8.25 19.25a2.25 2.25 0 01-1.5 0m1.5 0a2.25 2.25 0 001.5 0m-3 0h6m-6 0a2.25 2.25 0 01-.75-1.5m.75 1.5h3m-3-3L12 15.75m3-3L15 12.75" />
-              </svg>
-            </a>
-            <a href="#" className="hover:text-gray-400">
-              {/* TikTok */}
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17V5m0 12a2 2 0 002 2m-2-2a2 2 0 012-2m-2 2v-2m0-2a2 2 0 002-2m-2 2a2 2 0 012-2m-2 2v-2m0-2a2 2 0 002-2m-2 2a2 2 0 012-2" />
-              </svg>
-            </a>
-          </div>
 
           {/* System Status */}
           <div className="flex items-center text-xs text-gray-500 mb-1">
@@ -63,9 +47,9 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} MindzFlair. All rights reserved.
       </div>
         {/* Watermark */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <h1 className="text-[10vw] md:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-black via-cyan-800 to-black opacity-15 select-none">
-             Mindzflair
+      <div className="absolute inset-0 flex place-items-end-safe justify-center pointer-events-none">
+        <h1 className="text-[1vw] md:text-9xl font-extrabold text-slate-400 opacity-3 select-none">
+          MindsFlare
         </h1>
       </div>
     </footer>
