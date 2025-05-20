@@ -8,8 +8,6 @@ const Footer = () => {
                       dark:bg-gradient-to-tr dark:from-black dark:via-gray-900 dark:to-black 
                       text-gray-600 dark:text-gray-300 py-10 border-t-2 border-slate-800 overflow-hidden">
 
-     
-
       <div className="relative z-10 container mx-auto px-4 md:px-8 lg:px-12 flex flex-col md:flex-row justify-between items-start gap-10">
 
         {/* Left: Brand & Description */}
@@ -49,7 +47,7 @@ const Footer = () => {
         {/* Watermark */}
       <div className="absolute inset-0 flex place-items-end-safe justify-center pointer-events-none">
         <h1 className="text-[1vw] md:text-9xl font-extrabold text-slate-400 opacity-3 select-none">
-          MindsFlare
+          MindZFlair
         </h1>
       </div>
     </footer>

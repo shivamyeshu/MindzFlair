@@ -15,7 +15,7 @@ export default function Hero() {
  
   {/* Watermark Book Background */}
   <div
-    className="absolute  inset-0 z-0  bg-[url('/logo1.png')] bg-no-repeat bg-center bg-contain opacity-10 dark:opacity-8 mt-5"
+    className="absolute  inset-0 z-0  bg-[url('/logo1.png')] bg-no-repeat bg-center bg-contain opacity-10 dark:opacity-8 mt-10"
     aria-hidden="true"
   />
 

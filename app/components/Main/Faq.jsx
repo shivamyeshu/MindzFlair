@@ -58,7 +58,7 @@ export default function FAQSection() {
                 </span>
               </button>
               {activeIndex === index && (
-                <p className="text-gray-400 mt-3">{faq.answer}</p>
+                <p className="text-gray-400 mt-3 text-left ">{faq.answer}</p>
               )}
             </div>
           ))}
