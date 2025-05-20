@@ -100,7 +100,7 @@ export const NavItems = ({
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800" />
+              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-gray-700/40" />
           )}
           <span className="relative z-20">{item.name}</span>
         </a>
@@ -195,15 +195,9 @@ export const NavbarLogo = () => {
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black">
       
-      {/* <img
-        src="https://assets.aceternity.com/logo-dark.png"
-        alt="logo"
-        width={30}
-        height={30} /> */}
-
-      <span className="font-medium text-black dark:text-white">
+           <span className="font-medium text-black dark:text-white">
            <h2 className="text-gray-900 dark:text-white text-2xl font-bold mb-3">
-            Mind<span className="text-transparent bg-clip-text bg-gradient-to-tr from-violet-500 via-indigo-400 to-blue-400 drop-shadow-md ">Z</span>flair
+            Mind<span className="text-transparent bg-clip-text bg-gradient-to-tr from-violet-500 via-indigo-400 to-blue-400 drop-shadow-md ">Z</span>Flair
           </h2>
       </span>
     </a>

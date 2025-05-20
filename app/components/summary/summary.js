@@ -9,7 +9,7 @@ export default function SummaryInput() {
   const [countdown, setCountdown] = useState("");
 
   useEffect(() => {
-    const targetDate = new Date("2025-05-22T00:00:00");
+    const targetDate = new Date("2025-05-25T00:00:00");
     const interval = setInterval(() => {
       const now = new Date();
       const diff = targetDate - now;
@@ -82,7 +82,7 @@ export default function SummaryInput() {
                     : "bg-gradient-to-br from-violet-500 to-blue-400 hover:from-blue-600 hover:to-violet-500 cursor-pointer text-white"
                 }`}
               >
-                {loading ? "⏳ Loading..." : "Fetch Transcript"}
+                {loading ? "⏳" : "Fetch Transcript"}
               </button>
             </form>
 
