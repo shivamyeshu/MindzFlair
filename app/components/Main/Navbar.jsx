@@ -60,7 +60,7 @@ export function NavbarFuck() {
             <div className="flex items-center gap-4 cursor-pointer text-white">
               <NavbarButton
                 onClick={() =>
-                  handleExternalNav("https://mindzflair.com")
+                  handleExternalNav("https://www.mindzflair.com")
                 }
                 variant="primary"
                 className="w-full"
@@ -96,12 +96,12 @@ export function NavbarFuck() {
               <div className="flex w-full flex-col gap-4">
                 <NavbarButton
                   onClick={() =>
-                    handleExternalNav("https://mindzflair.com")
+                    handleExternalNav("https://www.mindzflair.com")
                   }
                   variant="primary"
                   className="w-full"
                 >
-                 Top Summary
+                 Top Summary 
                 </NavbarButton>
               </div>
             </MobileNavMenu>
