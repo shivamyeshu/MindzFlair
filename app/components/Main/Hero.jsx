@@ -2,17 +2,14 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
-import Faq from "./Faq";
 import FAQSection from "./Faq";
 
 export default function Hero() {
   return (
     <>
-
     <div className=" relative bg-gradient-to-tr from-blue-100 via-purple-300 to-pink-100 
                       dark:bg-gradient-to-tl dark:from-black dark:via-gray-900 dark:to-black  ">
   
- 
   {/* Watermark Book Background */}
   <div
     className="absolute  inset-0 z-0  bg-[url('/logo1.png')] bg-no-repeat bg-center bg-contain opacity-10 dark:opacity-8 mt-10"
@@ -85,14 +82,13 @@ export default function Hero() {
         
       </div>
     </div>
-    <Faq1/>
+    <More/>
     </>
   );
 }
 
-function Faq1(){
+function More(){
   return(
- 
 <>
 <section className="bg-gradient-to-tr from-black via-slate-900  to-black text-white py-20 px-6">
   <div className="max-w-6xl mx-auto">

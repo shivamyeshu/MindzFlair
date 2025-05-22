@@ -60,7 +60,7 @@ export function NavbarFuck() {
             <div className="flex items-center gap-4 cursor-pointer text-white">
               <NavbarButton
                 onClick={() =>
-                  handleExternalNav("https://summary.mindzflair.com")
+                  handleExternalNav("https://mindzflair.com")
                 }
                 variant="primary"
                 className="w-full"

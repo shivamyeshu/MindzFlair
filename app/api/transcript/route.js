@@ -1,22 +1,28 @@
 import { NextResponse } from 'next/server'
-import { YoutubeTranscript } from 'youtube-transcript' // npm i youtube-transcript
+import { YoutubeTranscript } from 'youtube-transcript'
+import he from 'he'
 
 export async function POST(req) {
   try {
     const { videoId } = await req.json()
     if (!videoId) {
-      return NextResponse.json({ error: 'Missing videoId' }, { status: 400 })
+      return NextResponse.json({ error: 'Missing videoId' },
+      { status: 400 })
     }
 
     // Fetch transcript from YouTube
     const items = await YoutubeTranscript.fetchTranscript(videoId)
-    const fullText = items.map(i => i.text).join(' ')
-    // console.log("summary ", fullText )
-    console.log('Transcript length:', fullText.length)
+    let fullText = items.map(i => i.text).join(' ')
+
+    // Decode
+    fullText = he.decode(he.decode(fullText))
+
+    console.log('Transcript length :', fullText.length)
 
     return NextResponse.json({ transcript: fullText })
   } catch (e) {
-    console.error('API error:', e)
-    return NextResponse.json({ error: e.message }, { status: 500 })
+    console.error('API error :', e)
+    return NextResponse.json({ error: e.message },
+   { status: 500 })
   }
 }

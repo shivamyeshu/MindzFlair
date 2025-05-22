@@ -21,29 +21,46 @@ export async function getPlaylistData(playlistId) {
   let title = '';
   let videoCount = 0;
 
-  const playlistDetails = await fetch(`https://www.googleapis.com/youtube/v3/playlists?part=snippet,contentDetails&id=${playlistId}&key=${API_KEY}`);
+  const playlistDetails = await fetch(
+    `https://www.googleapis.com/youtube/v3/playlists?part=snippet,contentDetails&id=${playlistId}&key=${API_KEY}`
+  );
   const playlistData = await playlistDetails.json();
+
+  if (!playlistData.items || playlistData.items.length === 0) {
+    console.error('YouTube API returned invalid playlist data:', playlistData);
+    throw new Error('Playlist not found or unauthorized. Check API key and playlist ID.');
+  }
 
   title = playlistData.items[0].snippet.title;
   videoCount = playlistData.items[0].contentDetails.itemCount;
 
+  // Fetch all video IDs
   do {
-    const res = await fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&pageToken=${nextPageToken}&playlistId=${playlistId}&key=${API_KEY}`);
+    const res = await fetch(
+      `https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&pageToken=${nextPageToken}&playlistId=${playlistId}&key=${API_KEY}`
+    );
     const data = await res.json();
     nextPageToken = data.nextPageToken || '';
     videoIds.push(...data.items.map(item => item.contentDetails.videoId));
   } while (nextPageToken);
 
+  // Split video IDs into chunks of 50
   const videoChunks = [];
   for (let i = 0; i < videoIds.length; i += 50) {
     videoChunks.push(videoIds.slice(i, i + 50));
   }
 
+  // Fetch video durations
   let totalSeconds = 0;
   for (const chunk of videoChunks) {
-    const res = await fetch(`https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=${chunk.join(',')}&key=${API_KEY}`);
+    const res = await fetch(
+      `https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=${chunk.join(',')}&key=${API_KEY}`
+    );
     const data = await res.json();
-    totalSeconds += data.items.reduce((sum, video) => sum + parseDuration(video.contentDetails.duration), 0);
+    totalSeconds += data.items.reduce((sum, video) => {
+      const duration = video.contentDetails?.duration;
+      return duration ? sum + parseDuration(duration) : sum;
+    }, 0);
   }
 
   const avg = totalSeconds / videoIds.length;

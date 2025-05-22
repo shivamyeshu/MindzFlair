@@ -33,11 +33,11 @@ export default function PlaylistStats({ data }) {
   }, [data]); // depend on `data`
 
   return (
-    <div className="mt-6 text-left text-gray-300 bg-gradient-to-br from-blue-100 via-purple-200 to-pink-100 
-                     dark:bg-gradient-to-bl dark:from-slate-900 dark:via-gray-950 dark:to-slate-900 border p-5 rounded-2xl py-6">
-      <p><strong>Title of playlist:</strong> {data.title}</p>
-      <p><strong>No. of Videos in playlist:</strong> {data.videoCount}</p>
-      <p><strong>Total Playlist Duration:</strong> {data.totalDuration}</p>
+    <div className="mt-6 text-left  bg-gradient-to-br from-blue-100 via-purple-200 to-pink-100 
+                     dark:bg-gradient-to-bl dark:from-slate-900 dark:via-gray-950 dark:to-slate-900 border text-white p-5 rounded-2xl py-6">
+      <p ><strong>Title :</strong> {data.title}</p>
+      <p><strong>No. of Videos :</strong> {data.videoCount}</p>
+      <p><strong>Total Duration:</strong> {data.totalDuration}</p>
       <p><strong>Average Video Duration:</strong> {data.averageDuration}</p>
       <hr className="my-4" />
       <p><strong>At speed 1.25x:</strong> {data.at125x}</p>
